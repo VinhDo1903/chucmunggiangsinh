@@ -1,3 +1,1 @@
-"# giang-sinh" 
-"# chucmunggiangsinh" 
 "# chucmunggiangsinh" 
