@@ -135,13 +135,11 @@ body {
 /* Reindeer Begin */
 #reindeer {
 	position: fixed;
-	bottom: 90px;
-	right: 10px;
+	bottom: 9px;
+	right: 0px;
 	cursor: hand;
 	cursor: pointer;
 	z-index: 10000;
-	width: 250px;  
-	height: 250px;
 }
 /* Reindeer End */
 
