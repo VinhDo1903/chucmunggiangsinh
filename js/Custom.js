@@ -1,12 +1,23 @@
 var sound = new Howl({
-        urls: ['song/background.mp3'],
-    loop: true
-  });
+    urls: ['song/background.mp3'],
+    loop: true,
+    preload: true
+});
+
+let soundId = null; // Biến để lưu ID âm thanh
+
+$(document).on('click', function() {
+    if (soundId === null || !sound.playing(soundId)) {
+        soundId = sound.play(); // Phát nhạc và lưu ID âm thanh
+    }
+});
+
+
 
 function loading() {
     $('body').css('height', $(window).height());
     $('#loading').css('visibility', 'visible');
-    setTimeout('loadingVisible()', 1500);
+    setTimeout(loadingVisible, 1500);
 }
 
 function loadingVisible() {
@@ -15,8 +26,10 @@ function loadingVisible() {
         'overflow': 'visible',
         'height': '100%'
     });
-    sound.play();
+    // Không phát nhạc ở đây nữa, chỉ chờ người dùng nhấn chuột
 }
+
+
 
 /* Scroll Title Begin */
 var scrl = "Giáng sinh vui vẻ! ";
