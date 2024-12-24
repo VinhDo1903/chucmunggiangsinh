@@ -1,5 +1,5 @@
 var sound = new Howl({
-    urls: ['song/background.mp3'],
+    urls: ['https://github.com/VinhDo1903/chucmunggiangsinh/blob/c51dfcc8ac2466af2e74476826e77ff30d942c40/song/background.mp3'],
     loop: true
   });
 
